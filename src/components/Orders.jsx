@@ -61,7 +61,7 @@ const Orders = ({ setCurrentView }) => {
                 setCurrentView('home');
                 // This would trigger the auth modal
               }}
-              className="bg-pink-500 hover:bg-pink-600 text-white"
+              className="bg-slate-500 hover:bg-slate-600 text-white"
             >
               Sign In
             </Button>
@@ -93,7 +93,7 @@ const Orders = ({ setCurrentView }) => {
             <p className="text-gray-500 mb-6">When you place your first order, it will appear here.</p>
             <Button
               onClick={() => setCurrentView('home')}
-              className="bg-pink-500 hover:bg-pink-600 text-white"
+              className="bg-slate-500 hover:bg-slate-600 text-white"
             >
               Start Shopping
             </Button>
@@ -133,7 +133,7 @@ const Orders = ({ setCurrentView }) => {
                   <Badge className={`${getStatusColor(order.status)} text-white`}>
                     {order.status.charAt(0).toUpperCase() + order.status.slice(1)}
                   </Badge>
-                  <div className="text-lg font-bold text-pink-600 mt-1">
+                  <div className="text-lg font-bold text-slate-600 mt-1">
                     ₹{order.total}
                   </div>
                 </div>
@@ -194,12 +194,12 @@ const Orders = ({ setCurrentView }) => {
       </div>
 
       {/* Order summary */}
-      <Card className="mt-8 bg-pink-50">
+      <Card className="mt-8 bg-slate-50">
         <CardContent className="p-6">
           <h3 className="font-semibold text-lg mb-4">Order Summary</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div>
-              <div className="text-2xl font-bold text-pink-600">{state.orders.length}</div>
+              <div className="text-2xl font-bold text-slate-600">{state.orders.length}</div>
               <div className="text-sm text-gray-600">Total Orders</div>
             </div>
             <div>

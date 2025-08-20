@@ -123,7 +123,7 @@ const Header = ({ currentView, setCurrentView }) => {
                   variant="ghost"
                   size="sm"
                   onClick={() => setCurrentView('orders')}
-                  className="text-white hover:bg-white/20"
+                  className="text-white hover:bg-white/20 hover:text-white"
                 >
                   Orders
                 </Button>
